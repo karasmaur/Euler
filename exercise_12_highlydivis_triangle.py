@@ -18,8 +18,8 @@ def divisor(number):
         i += 1
     return divisions
 
-print(divisor(28)) # 28: 1,2,4,7,14,28
-'''
+
+
 n = 1
 while True:
     number = n * (n + 1) / 2
@@ -27,5 +27,5 @@ while True:
         print(number)
         break
     n += 1
-'''
+
 print(time.time() - before)
