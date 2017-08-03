@@ -14,4 +14,4 @@ for i in sequence2:
     if i%2 == 0:
         soma += i
 
-print 'TOTAL: ' + str(soma)
+print('TOTAL: ' + str(soma))
