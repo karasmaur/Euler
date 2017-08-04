@@ -6,7 +6,7 @@ before = time.time()
 dict = {}
 limit = 1000000
 
-while limit > 1:
+while limit > 400000:
     number = limit
     count = 0
     while number > 1:
@@ -18,10 +18,14 @@ while limit > 1:
     dict[limit] = count
     limit -= 1
 
-print(dict)
+search = max(dict.values())
+print(search)
+for key, value in dict.items():
+    if value == search:
+        print(key)
 
 # Show elapse time:
-print(before - time.time())
+print(time.time() - before)
 
 with open('data.json', 'w+') as fp:
     json.dump(dict, fp)
